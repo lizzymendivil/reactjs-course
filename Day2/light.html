@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="encenderFoco()">
+            Switch
+        </button>
+    </div>
+    <img src="off.jpg" alt="" id="foco">
+    <script>
+        let flag = false;
+        let encenderFoco = () => {
+            let foco = document.getElementById('foco');
+            if (foco.src.match("on")) 
+                foco.src = "off.jpg";
+            else
+                foco.src = "on.jpg";
+        }
+    </script>
+</body>
+</html>
